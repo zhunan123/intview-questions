@@ -1,0 +1,80 @@
+1. Angular 和 React 有什么区别，什么项目应该用angular，什么项目应该用react?
+Angular is a UI framework, while React is a UI library. In practice, 
+this means that Angular comes with a lot of built-in features and is more opinionated 
+on how you should implement your app. Although React gives you more freedom in the libraries 
+you will use in your app (for routing, state management, fetching, unit testing, etc.), there 
+is well-established a set of mainstream libraries you will probably end up using.
+For large project
+I think angular is better becuase it has a good typing system and pipleline
+Lastely if we need some pipleline requirement
+I will create a jenkins file and
+But react also can do large project it’s more flexable,
+
+
+2.when you first create react application, what is the step to set up biolate?
+create package.json and includes react core packages, and add configuration for webpack and build 
+eslint for code style, and build the system pipeline and and CI/CD jenkins job
+build the react scripts like npm install or if we are using nginx build the nginx server environment as well
+build react test scripts as well
+
+3.what is difference between webpack loader and plugin
+Loaders:
+Loaders work at the individual file level during or before the bundle is generated.
+Plugins:
+Plugins work at bundle or chunk level and usually work at the end of the bundle generation 
+process. Plugins can also modify how the bundles themselves are created. Plugins have more 
+powerful control than loaders.
+
+4.what is javascript polyfill and babal? and what is the code example.
+I think it is polyfill can make the modern function usable for the older generateion browser like IE.
+Babel Polyfill adds support to the web browsers for features, which are not available. Babel compiles 
+code from recent ecma version to the one, which we want into order browser like IE. It changes the syntax
+as per the preset, but cannot do anything for the objects or methods used.
+
+5.why we use redux?
+When using Redux with React, states will no longer need to be lifted up. This makes it easier for you to trace
+which action causes any change.
+As you can see in the example above, the component does not need to provide any state or method for its 
+children components to share data among themselves. Everything is handled by Redux. This greatly simplifies 
+the app and makes it easier to maintain.
+This is the primary reason why you should use Redux, but it’s not the only benefit. Take a look at the list 
+below for a summary of what you stand to gain by using Redux for state management.
+
+6.whats the difference betweeen Redux and contextAPI
+useContext	                                     Redux
+useContext is a hook.	                         Redux is a state management library.
+It is used to share data.	                     It is used to manage data and state.
+Changes are made with the Context value.	     Changes are made with pure functions i.e. reducers.
+We can change the state in it.	                 The state is read-only. We cannot change them directly.
+
+7.whats difference between a controlled component and uncontrolled component?
+In a controlled component, form data is handled by a React component. The alternative is uncontrolled 
+components, where form data is handled by the DOM itself. To write an uncontrolled component, instead 
+of writing an event handler for every state update, you can use a ref to get form values from the DOM.
+
+8.what is high order component?
+A higher-order component (HOC) is an advanced technique in React for reusing component logic. 
+They are a pattern that emerges from Reacts compositional nature. ... Concretely, a higher-order 
+component is a function that takes a component and returns a new component.
+
+9.Performance Optimization Techniques for React Apps
+Using Immutable Data Structures Function/Stateless Components and React.PureComponent
+Using Production Mode Flag in Webpack Use React.Fragments to Avoid Additional HTML Element Wrappers
+Data caching
+Use Server SIde rendering
+
+10.whats difference javascipt call() and bind()
+Use .bind() when you want that function to later be called with a certain context, useful in events
+. Use .call() or .apply() when you want to invoke the function immediately, and modify the context.
+Call/apply call the function immediately, whereas bind returns a function that, when later executed, 
+will have the correct context set for calling the original function. This way you can maintain context 
+in async callbacks and events.
+
+11.what is scope of var, let, const?
+var declarations are globally scoped or function/locally scoped.
+let is block scoped A block is a chunk of code bounded by {}. A block lives in curly braces. Anything within curly braces is a block.
+const declarations are block scoped Like let declarations, const declarations can only be accessed within the block they were declared.
+
+12.stopPropagation vs. stopImmediatePropagation
+stopPropagation will prevent any parent handlers from being executed stopImmediatePropagation will prevent
+any parent handlers and also any other handlers from executing
