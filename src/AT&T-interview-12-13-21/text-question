@@ -1,0 +1,40 @@
+1. why use React?
+Key Features of React----------->
+            Allows you to use 3rd party libraries
+            Time-Saving
+            Simplicity and Composable
+            Fully supported by Facebook.
+            Better user experience and very fast performance.
+            Faster Development
+            Code Stability with One-directional data binding
+            React Components
+Key Features of Angular------------>
+            Built-in support for AJAX, HTTP, and Observables
+            Large community support
+            Consistent with technology
+            Typescript offers efficiency
+            Cleaner and crisp Coding
+            Enhanced support for error handling
+            Seamless updates using Angular CLI
+            Forms and validation
+            Shadow DOM / local CSS
+            UI and Business Logic Separation
+
+
+2. react lifeCycle
+Mounting------->
+Mounting means putting elements into the DOM.
+constructor()
+getDerivedStateFromProps()
+render()
+componentDidMount()
+Updating-------->
+The next phase in the lifecycle is when a component is updated.
+getDerivedStateFromProps()
+shouldComponentUpdate()
+render()
+getSnapshotBeforeUpdate()
+componentDidUpdate()
+Unmounting------------>
+The next phase in the lifecycle is when a component is removed from the DOM, or unmounting as React likes to call it.
+componentWillUnmount()
