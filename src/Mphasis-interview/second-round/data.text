@@ -1,0 +1,161 @@
+// Use below API to get todo list
+// https://gorest.co.in/public/v1/todos
+
+//API Response
+// {
+//   "meta": {
+//     "pagination": {
+//       "total": 1929,
+//       "pages": 97,
+//       "page": 1,
+//       "limit": 20,
+//       "links": {
+//         "previous": null,
+//         "current": "https://gorest.co.in/public/v1/todos?page=1",
+//         "next": "https://gorest.co.in/public/v1/todos?page=2"
+//       }
+//     }
+//   },
+//   "data": [
+//     {
+//       "id": 25,
+//       "user_id": 21,
+//       "title": "Attonbitus theatrum admoneo crudelis synagoga aufero.",
+//       "due_on": "2021-10-30T00:00:00.000+05:30",
+//       "status": "pending"
+//     },
+//     {
+//       "id": 36,
+//       "user_id": 27,
+//       "title": "Et cetera sit abstergo accommodo.",
+//       "due_on": "2021-11-03T00:00:00.000+05:30",
+//       "status": "pending"
+//     },
+//     {
+//       "id": 37,
+//       "user_id": 27,
+//       "title": "Fugiat est viduata adhuc conscendo centum astrum absum.",
+//       "due_on": "2021-10-17T00:00:00.000+05:30",
+//       "status": "pending"
+//     },
+//     {
+//       "id": 38,
+//       "user_id": 27,
+//       "title": "Solio voluptatem benevolentia incidunt cognomen pauper aut advenio.",
+//       "due_on": "2021-11-04T00:00:00.000+05:30",
+//       "status": "pending"
+//     },
+//     {
+//       "id": 51,
+//       "user_id": 35,
+//       "title": "Accusantium catena coniecto desino rerum.",
+//       "due_on": "2021-10-28T00:00:00.000+05:30",
+//       "status": "pending"
+//     },
+//     {
+//       "id": 52,
+//       "user_id": 35,
+//       "title": "Vestrum in abbas sapiente cattus.",
+//       "due_on": "2021-10-30T00:00:00.000+05:30",
+//       "status": "completed"
+//     },
+//     {
+//       "id": 1,
+//       "user_id": 2,
+//       "title": "Cupio carus amet comminor ",
+//       "due_on": "2021-10-23T00:00:00.000+05:30",
+//       "status": "completed"
+//     },
+//     {
+//       "id": 2,
+//       "user_id": 2,
+//       "title": "Id consequatur tutis viriliter tandem thalassinus universe sunt usque.",
+//       "due_on": "2021-10-08T00:00:00.000+05:30",
+//       "status": "completed"
+//     },
+//     {
+//       "id": 85,
+//       "user_id": 57,
+//       "title": "Ventito corpus verbera laboriosam inflammatio.",
+//       "due_on": "2021-10-23T00:00:00.000+05:30",
+//       "status": "completed"
+//     },
+//     {
+//       "id": 86,
+//       "user_id": 57,
+//       "title": "Coniecto cenaculum carus consectetur theatrum tripudio velociter.",
+//       "due_on": "2021-10-10T00:00:00.000+05:30",
+//       "status": "pending"
+//     },
+//     {
+//       "id": 87,
+//       "user_id": 57,
+//       "title": "Officiis terebro creta ullam est summa.",
+//       "due_on": "2021-10-18T00:00:00.000+05:30",
+//       "status": "completed"
+//     },
+//     {
+//       "id": 88,
+//       "user_id": 59,
+//       "title": "Venio vesica virtus aperio non aggero victoria accusator tres colo.",
+//       "due_on": "2021-11-04T00:00:00.000+05:30",
+//       "status": "pending"
+//     },
+//     {
+//       "id": 89,
+//       "user_id": 62,
+//       "title": "Bibo aut sunt clementia odio sponte viduata.",
+//       "due_on": "2021-10-19T00:00:00.000+05:30",
+//       "status": "completed"
+//     },
+//     {
+//       "id": 90,
+//       "user_id": 62,
+//       "title": "Certe cibo summopere conturbo defetiscor cursim angustus cunctatio.",
+//       "due_on": "2021-10-07T00:00:00.000+05:30",
+//       "status": "pending"
+//     },
+//     {
+//       "id": 91,
+//       "user_id": 63,
+//       "title": "Sollers vulticulus cubitum nisi vomer maiores apud decor.",
+//       "due_on": "2021-10-13T00:00:00.000+05:30",
+//       "status": "pending"
+//     },
+//     {
+//       "id": 92,
+//       "user_id": 63,
+//       "title": "Cur celo aut adficio defendo comminor trepide natus.",
+//       "due_on": "2021-10-26T00:00:00.000+05:30",
+//       "status": "completed"
+//     },
+//     {
+//       "id": 93,
+//       "user_id": 63,
+//       "title": "Tamisium suppellex angulus absque tricesimus.",
+//       "due_on": "2021-10-14T00:00:00.000+05:30",
+//       "status": "completed"
+//     },
+//     {
+//       "id": 94,
+//       "user_id": 64,
+//       "title": "Distinctio admoveo aqua cribro statim neque non tabernus.",
+//       "due_on": "2021-11-03T00:00:00.000+05:30",
+//       "status": "completed"
+//     },
+//     {
+//       "id": 95,
+//       "user_id": 64,
+//       "title": "Claustrum carbo quis tam adduco appello deprecator textilis dolorum tener.",
+//       "due_on": "2021-10-23T00:00:00.000+05:30",
+//       "status": "pending"
+//     },
+//     {
+//       "id": 96,
+//       "user_id": 65,
+//       "title": "Vomito quia solus volaticus subito cimentarius aut.",
+//       "due_on": "2021-10-17T00:00:00.000+05:30",
+//       "status": "pending"
+//     }
+//   ]
+// }

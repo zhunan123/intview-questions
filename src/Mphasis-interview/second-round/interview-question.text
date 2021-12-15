@@ -1,0 +1,25 @@
+1. how to make responsive website using media-query---------->
+@media screen and (min-width: 800px) {
+  .container {
+    margin: 1em 2em;
+  }
+}
+flexible grids such as AG-grids, Css Grid, flexBox
+
+2.how to develop web accessibility ------------>
+Associate a aria label with every form control.
+Include alternative text for images.
+Identify page language and language changes.
+Use mark-up to convey meaning and structure.
+Help users avoid and correct mistakes.
+Reflect the reading order in the code order.
+
+3.What is stateless component in React.js?---------->
+Stateless components are those components which don't have any state at all
+which means you can't use this.setState inside these components.
+class--->stateful function------>stateless
+
+4.when stateless or when stateful?------------->
+As cool as state is, you should always aim to make your components as simple and stateless as possible,
+so different components can be reused like Lego pieces, even if you don't have immediate plans to reuse
+a component. The stateful ones should feel lucky to be so
