@@ -1,0 +1,73 @@
+1.frontend how to design API with backend engineer?---------->
+Getting information from business requirement
+Then backend guy will design the api based on the product team, also based on the requiment from frontend
+To meet the data format they 
+1) Have the front-end developers provide a “wish list” of APIs they want - and provide documentation of the 
+ behaviors.
+2) Have the back-end developer review the desired APIs. If some appear to be difficult to implement or are 
+likely to be slow, the back-end dev should see if other alternatives are acceptable to the front-end dev.
+
+2.how to connect nodeJS with mongoDB------->
+Install Node.js
+npm install mongodb
+Import MongoClient---->const {MongoClient} = require('mongodb');
+Create our main function------>async function main() {}
+create an instance of MongoClient ---->const client = new MongoClient(uri);
+await client.connect();
+await listDatabases(client);
+try {
+    await client.connect();
+
+    await listDatabases(client);
+ 
+} catch (e) {
+    console.error(e);
+}
+finally {
+    await client.close();
+}
+
+
+
+3.nodeJS library---->
+express
+socket.io
+Axios
+Mongoose
+Faker
+Jest
+Moment
+Lodash
+validator
+
+4.how do you learn new technology? ------>
+First I will go through the tech document of the technology
+Secondly I will review some code example provided by the offcial document
+Recently I was learning the micro service and service as backend pattern
+I try to use azure function in one of my side project
+
+
+5.Basic commands for mongoDB
+db.help
+show dbs
+use DATABASE_NAME
+db.dropDatabase()
+db.createCollection(name)
+db.COLLECTION_NAME.drop()
+db.COLLECTION_NAME.insert(document)
+
+
+
+6.Is it bad practice to use LocalStorage?---->
+It resides entirely on the client, so any processing of that data would likely need to be done on the client
+It's a simple key/value object store, so performance will decrease if you give it too much to do
+Persistance can be an issue. You can lose Local Storage at any time due to a browser reset, maintenance script run or HDD swap/failure
+It isn't particularly secure and is very vulnerable to XSS (cross-site scripting) attacks
+Access is synchronous, so it can stall the browser while larger objects are retrieved or written
+Most browsers usually have a hard limit for how much data 
+
+
+
+7.What are Axios interceptors?
+Image result for axios interceptors
+In the same way, the Axios interceptor is a function that gets called by Axios to update/transform each request before forwarding it & check/filter the response before returning it. In short, you can intercept the requests or responses before they are handled by then or catch.
