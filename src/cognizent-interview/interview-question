@@ -1,0 +1,19 @@
+1.whats difference between margin and padding?---------------->
+Margin is the outer space of an element, while padding is the inner space of an element. 
+In other words, margin is the space outside of an element's border, while padding is the 
+space inside of its border
+
+
+
+2.What is the order of precedence for CSS?------------->
+id has higher precedence than class selector
+class selector has higher precedence than attribute and element selector
+attribute selector has higher precedence than element selector
+element selector has higher precedence than universal selector and inherited styles. 
+
+
+3.Difference between concat and push in array?----------->
+The push() adds elements to the end of an array and returns the new length of the array.
+Thus your return here is invalid.
+The concat() method is used to merge arrays. Concat does not change the existing arrays,
+but instead returns a new array.
