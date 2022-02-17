@@ -1,0 +1,33 @@
+1.Which is better function component or class component in React?------------>
+Conclusion: If you are writing a presentational component which doesn't have its own state or needs
+ to access a lifecycle hook,use functional component as much as possible. For state management you can 
+ use class component
+
+ 2.What is the use of props?--------->
+We use props in React to pass data from one component to another 
+(from a parent component to a child component(s)). Props is just a shorter way of saying properties. 
+They are useful when you want the flow of data in your app to be dynamic.
+
+3.what is high order components in react------>
+A higher-order component (HOC) is an advanced technique in React for reusing component logic. 
+HOCs are not part of the React API, per se. They are a pattern that emerges from React's compositional nature. 
+Concretely, a higher-order component is a function that takes a component and returns a new component.
+
+4.what is react router?
+React Router is the standard routing library for React. ... “React Router keeps your UI in sync with the URL. 
+It has a simple API with powerful features like lazy code loading, dynamic route matching, and location transition
+ handling built right in
+
+5.what is spread operator in react---->
+The JavaScript spread operator ( ... ) allows us to quickly copy all or part of an existing array or object into another 
+array or object.
+
+6.what is difference in let vat and const?----->
+var	let	const
+Variables declared with var are in the function scope.	Variables declared as let are in the block scope.	
+Variables declared as const are in the block scope.
+
+7.How do I declare a variable in Sass?-------->
+The basic syntax for defining a variable is simple: Just use a $ before the variable name and 
+treat its definition like a CSS rule: Sass Variable Syntax: $<variable name>:<value>; The following
+ declares a variable named large-font.
